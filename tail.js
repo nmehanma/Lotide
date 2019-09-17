@@ -10,14 +10,21 @@ const assertEqual = function(actual, expected) {
 
 //Test Code
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(2, 1);
 
-let head = function(assertEqual)
-  {console.log(assertEqual[0])
+let tail = function(array){
+  return array.slice(1);
 
-  }
+}
+  
 
-  console.log(assertEqual)
+  console.log(tail([5,6,7]))
+
+
+
+
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual(1, 1);
+// assertEqual(2, 1);
+
+
   
