@@ -31,8 +31,8 @@ const eqArrays = function(array1, array2) {
   
 }
 
-// console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));
-  assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
+assertEqual (eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
+  // assertEqual (eqArrays(["1", "2", "3"], ["1", "2", 3], false)); // => false
 
 
   // let a = arrays1.toString();
