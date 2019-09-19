@@ -13,25 +13,20 @@ const assertEqual = function(actual, expected) {
 
 };
 
-
 const eqObjects = function(object1, object2) {
 
   if(Object.keys(object1).length !== Object.keys(object2).length) {
 
     return false;
-
   }
 
   for(const key of Object.keys(object1)) {
 
     if (object1[key] !==  object2[key]) {
 
-      return false
-
-      
+      return false 
     }
 
-    
   }
 
 return true
@@ -82,12 +77,12 @@ const dc = { d: ["2", 3], c: "1"};
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
 
-assertEqual(eqObjects(cd, cd2), false);
+// assertEqual(eqObjects(cd, cd2), false);
 
-eqArrays(eqObjects(cd, cd2), false);
+// eqArrays(eqObjects(cd, cd2), false);
 
 
-assertEqual(eqObjects(cd, dc), false)
+// assertEqual(eqObjects(cd, dc), false)
 
 
 
