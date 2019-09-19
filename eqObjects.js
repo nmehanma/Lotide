@@ -39,6 +39,33 @@ return true
 }
 
 
+const eqArrays = function(array1, array2) {
+
+  if( array1.length !== array2.length) {
+    return false
+  }
+
+  for(let i = 0; i < array1.length; i++) {
+
+    let a = array1[i]
+    let b = array2[i]
+
+    if (a !== b) {
+      return false
+    }
+  } return true
+  
+}
+
+
+
+
+
+
+
+
+
+
 
 const ab = {a: "1", b: "2"};
 const ba = {b: "2", a: "1"};
@@ -56,6 +83,9 @@ const dc = { d: ["2", 3], c: "1"};
 const cd2 = { c: "1", d: ["2", 3, 4] };
 
 assertEqual(eqObjects(cd, cd2), false);
+
+eqArrays(eqObjects(cd, cd2), false);
+
 
 assertEqual(eqObjects(cd, dc), false)
 
