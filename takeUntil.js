@@ -45,6 +45,8 @@ console.log(results)
 const results1 = takeUntil(data1, item => item === "been");
 console.log(results)
 
+const results2 = takeUntil(data1, item => item === ",")
+
 
 //Assertion function
 
@@ -86,7 +88,11 @@ const eqArrays = function(array1, array2) {
   
 }
 
-assertArraysEqual(results, results1); 
+assertArraysEqual(results, results1);
+
+assertArraysEqual(results, results2);
+
+
 
 
 
