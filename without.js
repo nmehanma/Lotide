@@ -1,3 +1,31 @@
+const without = function(source, itemsToRemove) {
+
+  let x = []
+  for(let i = 0; i < source.length; i++); {
+    if(itemsToRemove.includes(source[i]))  {
+      
+      return true
+    } 
+    
+  }
+
+
+
+}
+
+console.log(without([1,2,3], [1])) //=> [2, 3]
+
+console.log(without(["1", "2", "3"], [1,2,"3"])) // =>["1", "2"]
+
+
+
+
+
+
+
+
+
+
 // const Passed = 'Assertion Passed'
 // const Failed = 'Assertion Failed'
 // const equal = "==="
@@ -34,7 +62,3 @@
 
 
 
-let without = function(arr1, arr2) {
-
-  
-}
