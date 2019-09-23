@@ -1,6 +1,6 @@
 // Tests for Tail;
 
-const expect = require('chai').expect;
+const assert = require('chai').assert;
 
 const tail = require('../tail');
 
@@ -10,15 +10,24 @@ const tail = require('../tail');
 
 describe('#tail', () => {
   it('returns ["Lighthouse", "Labs"] for ["Hello", "Lighthouse", "Labs"]',() => {
-    expect(tail(["Hello", "Lighthouse", "Labs"])).to.be.eql(tail(["Hello", "Lighthouse", "Labs"]))
+    assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"])
     
   });
 
-  it('returns["Lighouse","Labs] for ["Hello", "Lighthouse", "Labs"]',() => {
-    expect(tail(["Hello", "Lighthouse", "Labs"])).to.not.eql(tail(["Hello", "Lighthouse"]))
+  it('returns ["Lighthouse", "Labs] for ["Hello", "Lighthouse", "Labs]', () => {
+    assert.notDeepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Hello", "Lighthouse"])
+
   });
+
+
   
+
+
 });
+  
+// edited with @avijitchoudhury how to figure out test cases for comparing the two arrays
+
+
 
 
 

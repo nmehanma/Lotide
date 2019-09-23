@@ -25,15 +25,15 @@ let tail = function(array) {
   
 
 
-console.log(tail([5,6,7]));
+// console.log(tail([5,6,7]));
 
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
+// const result = tail(["Hello", "Lighthouse", "Labs"]);
+// assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
 
-assertEqual(result[0], "Lighthouse");
-assertEqual(result[1], "Labs")
-assertEqual(result[2], undefined)
+// assertEqual(result[0], "Lighthouse");
+// assertEqual(result[1], "Labs")
+// assertEqual(result[2], undefined)
 
 module.exports = tail
 

@@ -14,6 +14,10 @@ describe("#head", () => {
     assert.strictEqual(head(['5']),'5')
   });
 
+  it("does not return '2' for [1,2,3]", () => {
+    assert.notStrictEqual(head(['2']), [1,2,3])
+  })
+
 });
 
 
