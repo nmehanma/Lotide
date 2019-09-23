@@ -8,10 +8,10 @@ const assertObjectsEqual = function(actual, expected) {
 
   const inspect = require('util').inspect; //
 
-  if(eqObjects(actual, expected) === true) {
-    console.log(`✅✅✅${Passed}`, actual, `${equal}`,expected);
+  if(eqObjects(actual, expected)=== true) {
+    console.log(`✅✅✅ Assertion Pass: ${inspect(actual)} === ${inspect(expected)}`);
   } else {
-    console.log(`❌❌❌${Failed}`, actual,`${notequal}`, expected);
+    console.log(`❌❌❌ Assertion Fail: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 };
 
@@ -43,4 +43,9 @@ const abc = {a: "1", b: "2", c: "3"}
 
 // console.log(assertObjectsEqual(eqObjects(ab,ba),true));
 
-console.log(assertObjectsEqual(eqObjects(ab,ba),false)); // => false
+assertObjectsEqual(
+  ab,
+  abc
+); // => false
+
+assertObjectsEqual(ab,ba);
