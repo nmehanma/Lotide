@@ -5,16 +5,13 @@ const notequal = "!=="
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`${Passed}`, actual,  `${equal}`, expected);
+    console.log(`✅✅✅${Passed}`, actual,  `${equal}`, expected);
   } else {
-    console.log(`${Failed}`, actual, `${notequal}`, expected);
+    console.log(`❌❌❌${Failed}`, actual, `${notequal}`, expected);
   }
 
 
 };
 
-//Test Code
+module.exports = assertEqual;
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-// assertEqual(1, 1);
-// assertEqual(2, 1);

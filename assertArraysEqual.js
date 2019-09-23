@@ -59,6 +59,6 @@ assertArraysEqual([1, 2, 3], [1, 2, 3]); // => false
 
 // //Test Code
 
-// assertEqual("Lighthouse Labs", "Bootcamp");
+assertEqual("Lighthouse Labs", "Bootcamp");
 // assertEqual(1, 1);
 // assertEqual(2, 1);
