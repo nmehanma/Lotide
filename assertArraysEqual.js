@@ -39,9 +39,9 @@ module.exports = assertArraysEqual
   
 // }
 
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => false
+// assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => false
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // => false
+// assertArraysEqual([1, 2, 3], [1, 2, 3]); // => false
 
 
 
@@ -62,6 +62,6 @@ assertArraysEqual([1, 2, 3], [1, 2, 3]); // => false
 
 // //Test Code
 
-assertArraysEqual("Lighthouse Labs", "Bootcamp");
+// assertArraysEqual("Lighthouse Labs", "Bootcamp");
 // assertEqual(1, 1);
 // assertEqual(2, 1);

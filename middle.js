@@ -6,41 +6,10 @@ const equal = "==="
 const notequal = "!=="
 
 
-// eqArrays function
 
-const eqArrays = function(array1, array2) {
+const eqArrays = require('./eqArrays.js');
 
-  if( array1.length !== array2.length) {
-    return false
-  }
-
-  for(let i = 0; i < array1.length; i++) {
-
-    let a = array1[i]
-    let b = array2[i]
-
-    if (a !== b) {
-      return false
-    }
-  } return true
-  
-}
-
-
-// assertArraysEqual function
-
-
-const assertArraysEqual = function (actual, expected) {
-
-  if (eqArrays(actual, expected)) {
-    console.log(`${Passed}`, actual,  `${equal}`, expected);
-  } else {
-    console.log(`${Failed}`, actual, `${notequal}`, expected);
-  }
- 
-  
-}
-
+const assertArraysEqual = require('./assertArraysEqual.js');
 
 
 // Actual Function
@@ -55,7 +24,6 @@ const middle = function(arr) {
       x = arr.splice(Math.floor(arr.length / 2), 1);
       // console.log("true")
       
-      
     } else {
       x = arr.splice(Math.floor(arr.length / 2) - 1, 2)
     }
@@ -63,6 +31,8 @@ const middle = function(arr) {
   return x
   
 }
+
+module.exports = middle;
 
 
 
@@ -73,18 +43,21 @@ const middle = function(arr) {
 
 // const result2 = middle([1]) // => undefined
 
-const result1 = middle([1,2,3]) // => [2]
+// const result1 = middle([1,2,3]) // => [2]
 
-const result2 = middle([1,2,3,4,5]) // => [3]
+// const result2 = middle([1,2,3,4,5]) // => [3]
 
-const result3 = middle ([1,2,3,4]) // => [2,3]
+// // const result3 = middle([1,2,3,4]) // => [2,3]
 
-const result4 = middle ([1,2,3,4,5,6,])
+// // const result4 = middle([1,2,3,4,5,6,])
+
+// module.exports = result1;
+// module.exports = result2;
 
 
-assertArraysEqual(result1.length, result2.length)
+assertArraysEqual(middle([1,2,3]), [2]);
 
-assertArraysEqual(result3.length, result4.length);
+// assertArraysEqual(result3.length, result4.length);
 
 
 

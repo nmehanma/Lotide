@@ -1,9 +1,15 @@
 // Test cases for assertArraysEqualTest
 
-const assertArraysEqual = require('../assertArraysEqual.js')
+const assertArraysEqual = require('../assertArraysEqual.js');
 
-// const eqArrays = require('../eqArrays.js')
+const middle = require('../middle.js');
 
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => false
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // => false
+
+
+
+assertArraysEqual(middle([1,2,3]), [2]);
+assertArraysEqual(middle([1,2,3,4,5]), [4]);
+assertArraysEqual(middle([1,2,3,4,5,6]), [3,4]);
+
+
