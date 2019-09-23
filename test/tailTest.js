@@ -2,11 +2,38 @@
 
 const assert = require('chai').assert;
 
-const tail = require('../tail');
+const middle = require('../tail');
 
 
 
 // const assertEqual = require('../assertEqual')
+
+
+describe("#middle", () => {
+  assert.strictEqual(middle([1,2,3]), 2);
+})
+
+// describe("#head", () => {
+//   it("returns 1 for [1,2,3]", () => {
+//     assert.strictEqual(head([1,2,3]),1);
+
+//   });
+
+//   it("returns '5' for ['5']", () => {
+//     assert.strictEqual(head(['5']),'5')
+//   });
+
+//   it("does not return '2' for [1,2,3]", () => {
+//     assert.notStrictEqual(head(['2']), [1,2,3])
+//   })
+
+// });
+
+
+
+
+
+
 
 describe('#tail', () => {
   it('returns ["Lighthouse", "Labs"] for ["Hello", "Lighthouse", "Labs"]',() => {
@@ -18,9 +45,6 @@ describe('#tail', () => {
     assert.notDeepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Hello", "Lighthouse"])
 
   });
-
-
-  
 
 
 });

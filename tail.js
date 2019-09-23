@@ -1,28 +1,21 @@
-// const Passed = 'Assertion Passed';
-// const Failed = 'Assertion Failed';
-// const equal = "===";
-// const notequal = "!==";
 
-// const assertEqual = function(actual, expected) {
-//   if (actual === expected) {
-//     console.log(`${Passed}`, actual,  `${equal}`, expected);
-//   } else {
-//     console.log(`${Failed}`, actual, `${notequal}`, expected);
-//   }
+//AssertEqual function
 
-// };
-
-
-
-//Test Code
 const assertEqual = require('./assertEqual');
 
+//Tail function
 
 let tail = function(array) {
   return array.slice(1);
 
 };
   
+
+module.exports = tail
+
+
+
+
 
 
 // console.log(tail([5,6,7]));
@@ -35,7 +28,6 @@ let tail = function(array) {
 // assertEqual(result[1], "Labs")
 // assertEqual(result[2], undefined)
 
-module.exports = tail
 
 
 // assertEqual("Lighthouse Labs", "Bootcamp");
