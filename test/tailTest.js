@@ -1,10 +1,24 @@
 // Tests for Tail;
 
+const expect = require('chai').expect;
+
 const tail = require('../tail');
-const assertEqual = require('../assertEqual')
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
 
-assertEqual(result[0], "Lighthouse");
-assertEqual(result[1], "Labs")
-assertEqual(result[2], undefined)
+
+// const assertEqual = require('../assertEqual')
+
+describe('#tail', () => {
+  it('returns ["Lighthouse", "Labs"] for ["Hello", "Lighthouse", "Labs"]',() => {
+    expect(tail(["Hello", "Lighthouse", "Labs"])).to.be.eql(tail(["Hello", "Lighthouse", "Labs"]))
+    
+  });
+
+  it('returns["Lighouse","Labs] for ["Hello", "Lighthouse", "Labs"]',() => {
+    expect(tail(["Hello", "Lighthouse", "Labs"])).to.not.eql(tail(["Hello", "Lighthouse"]))
+  });
+  
+});
+
+
+

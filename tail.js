@@ -23,7 +23,6 @@ let tail = function(array) {
 
 };
   
-module.exports = tail
 
 
 console.log(tail([5,6,7]));
@@ -35,6 +34,9 @@ assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
 assertEqual(result[0], "Lighthouse");
 assertEqual(result[1], "Labs")
 assertEqual(result[2], undefined)
+
+module.exports = tail
+
 
 // assertEqual("Lighthouse Labs", "Bootcamp");
 // assertEqual(1, 1);
