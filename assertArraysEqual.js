@@ -3,38 +3,41 @@ const Failed = 'Assertion Failed'
 const equal = "==="
 const notequal = "!=="
 
+const eqArrays = require('./eqArrays');
+
 const assertArraysEqual = function (actual, expected) {
 
   if (eqArrays(actual, expected)) {
-    console.log(`${Passed}`, actual,  `${equal}`, expected);
+    console.log(`✅✅✅${Passed}`, actual,  `${equal}`, expected);
   } else {
-    console.log(`${Failed}`, actual, `${notequal}`, expected);
+    console.log(`❌❌❌${Failed}`, actual, `${notequal}`, expected);
   }
  
   
 }
 
+module.exports = assertArraysEqual
 
 
 
-const eqArrays = function(array1, array2) {
+// const eqArrays = function(array1, array2) {
 
-  if( array1.length !== array2.length) {
-    return false
-  }
+//   if( array1.length !== array2.length) {
+//     return false
+//   }
 
-  for(let i = 0; i < array1.length; i++) {
+//   for(let i = 0; i < array1.length; i++) {
 
-    let a = array1[i]
-    let b = array2[i]
+//     let a = array1[i]
+//     let b = array2[i]
 
-    if (a !== b) {
-      return false
-    }
-  } 
-  return true
+//     if (a !== b) {
+//       return false
+//     }
+//   } 
+//   return true
   
-}
+// }
 
 assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => false
 
@@ -59,6 +62,6 @@ assertArraysEqual([1, 2, 3], [1, 2, 3]); // => false
 
 // //Test Code
 
-assertEqual("Lighthouse Labs", "Bootcamp");
+assertArraysEqual("Lighthouse Labs", "Bootcamp");
 // assertEqual(1, 1);
 // assertEqual(2, 1);
