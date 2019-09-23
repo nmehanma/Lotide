@@ -1,17 +1,19 @@
-const Passed = 'Assertion Passed'
-const Failed = 'Assertion Failed'
-const equal = "==="
-const notequal = "!=="
+// const Passed = 'Assertion Passed'
+// const Failed = 'Assertion Failed'
+// const equal = "==="
+// const notequal = "!=="
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`${Passed}`, actual,  `${equal}`, expected);
-  } else {
-    console.log(`${Failed}`, actual, `${notequal}`, expected);
-  }
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`${Passed}`, actual,  `${equal}`, expected);
+//   } else {
+//     console.log(`${Failed}`, actual, `${notequal}`, expected);
+//   }
 
 
-};
+// };
+
+const assertEqual = require('./assertEqual')
 
 const eqArrays = function(array1, array2) {
 
@@ -31,7 +33,9 @@ const eqArrays = function(array1, array2) {
   
 }
 
-assertEqual (eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
+module.exports = eqArrays;
+
+// assertEqual (eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
   // assertEqual (eqArrays(["1", "2", "3"], ["1", "2", 3], false)); // => false
 
 
