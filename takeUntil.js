@@ -1,15 +1,4 @@
-// const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
-// const results1 = takeUntil(data1, x => x < 0);
-// console.log(results1);
 
-// console.log(results1);
-
-
-  
-  // const results = []
-
-
-//function is going to return a "slice of the array with elements taken from the beginning"
 
 const takeUntil = function(array, callback) {
 
@@ -36,14 +25,15 @@ const takeUntil = function(array, callback) {
 
 }
 
+
 const data1 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 
 
 const results = takeUntil(data1, item=> item ===',');
-console.log(results)
+// console.log(results)
 
 const results1 = takeUntil(data1, item => item === "been");
-console.log(results)
+// console.log(results)
 
 const results2 = takeUntil(data1, item => item === ",")
 

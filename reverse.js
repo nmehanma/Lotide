@@ -9,5 +9,5 @@ function backwards(str) {
 }
 
 
-console.log(backwards("Hello Goodbye"))
+// console.log(backwards("Hello Goodbye"))
 

@@ -16,31 +16,31 @@ const flatten = require('./flatten');
 const letterPositions = require('./letterPositions');
 const map = require('./map');
 const reverse = require('./reverse');
-const takeUntil = require('/takeUntil');
-const Test = require('/Test');
-const without = require('/without');
+const takeUntil = require('./takeUntil');
+const Test = require('./Test');
+const without = require('./without');
 
 module.exports = {
 
-  head: head,
-  tail: tail,
-  middle: middle,
-  assertArraysEquals : assertArraysEquals,
-  assertEqual : assertEqual,
-  assertObjectsEqual : assertObjectsEqual,
-  countLetters : countLetters,
-  countOnly : countOnly,
-  eqArrays : eqArrays,
-  eqObjects: eqObjects,
-  findKey: findKey,
-  findKeyByValue : findKeyByValue,
-  flatten: flatten,
-  letterPositions: letterPositions,
-  map : map,
-  reverse : reverse,
-  takeUntil : takeUntil,
-  Test : Test,
-  without , without
+  head, 
+  tail,
+  middle,
+  assertArraysEquals,
+  assertEqual,
+  assertObjectsEqual,
+  countLetters,
+  countOnly,
+  eqArrays,
+  eqObjects,
+  findKey,
+  findKeyByValue,
+  flatten,
+  letterPositions,
+  map,
+  reverse,
+  takeUntil,
+  Test,
+  without,
 
 };
 

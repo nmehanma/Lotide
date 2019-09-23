@@ -71,4 +71,4 @@ const letterPositions = function(sentence) {
 
 const result1 = letterPositions("Lighthouse in the House");
 
-console.log(result1)
+// console.log(result1)

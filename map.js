@@ -27,13 +27,13 @@ const map = function(array, callback) {
 
 
 const results1 = map(words, word => word[0]);
-console.log(results1);
+// console.log(results1);
 
 const results2 = map(words1, word => word[0]);
-console.log(results2);
+// console.log(results2);
 
 const results3 = map(words2, word => word[0]);
-console.log(results3);
+// console.log(results3);
 
 
 

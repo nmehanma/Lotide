@@ -20,7 +20,7 @@ const countLetters = function (str) {
 
   for (const char of str) {
 
-    console.log(char)
+    // console.log(char)
 
     if(char !== " ") {
       if(results[char]) {
@@ -43,7 +43,7 @@ const countLetters = function (str) {
   
 const result1 = countLetters("lighthouse in the house");
 
-console.log(result1)
+// console.log(result1)
 
 
 

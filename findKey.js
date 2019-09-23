@@ -47,7 +47,7 @@ z = findkey({
 
 }, x=> x.stars === 3) // => "noma"
 
-console.log(y)
+// console.log(y)
 
 
 assertEqual(y,z)
